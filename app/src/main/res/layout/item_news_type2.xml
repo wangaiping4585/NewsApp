@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+    <TextView
+        android:id="@+id/newsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="早间新闻早间新闻早间新闻早间新闻早间新"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:minLines="1"
+        android:lineSpacingExtra="2dp"
+        android:layout_marginBottom="9dp"
+        />
+    <ImageView
+        android:id="@+id/newsImg"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:src="@drawable/doge"
+        android:scaleType="centerCrop"
+        android:layout_weight="1"
+
+        android:layout_below="@+id/newsTitle"
+        />
+    <TextView
+        android:id="@+id/pubIns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newsImg"
+        android:text="新华社"
+        android:textSize="14sp"
+        android:textColor="@color/lightGrey"
+        android:layout_marginTop="9dp"
+        />
+    <TextView
+        android:id="@+id/commentCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="611跟帖"
+        android:layout_below="@id/newsImg"
+        android:textSize="14sp"
+        android:textColor="@color/lightGrey"
+        android:layout_marginTop="9dp"
+        />
+</RelativeLayout>

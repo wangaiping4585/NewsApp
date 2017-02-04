@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="23dp"
+    android:paddingLeft="15dp"
+    android:paddingBottom="0dp">
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/shape_comment_tag"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="最新跟帖"/>
+    <TextView
+        android:id="@+id/noComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tag"
+        android:text="暂无评论"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:textSize="14dp"
+        android:textColor="@color/darkBlue"
+        android:paddingLeft="20dp"
+        android:textStyle="italic"/>
+</RelativeLayout>
