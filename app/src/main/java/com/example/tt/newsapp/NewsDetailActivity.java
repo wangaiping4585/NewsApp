@@ -136,11 +136,12 @@ public class NewsDetailActivity extends AppCompatActivity {
         commentDao = new CommentDao(d);
         List<Comment> commentList = commentDao.findByNewsIdAndTopNum(currentNews.getId(),3);
         adapter = new CommentInNewsDetailAdapter(this,commentList);
-        commentListView.setAdapter(adapter);
         //为listView添加头尾
         commentListView.addHeaderView(newsBody);
         commentListView.addHeaderView(commentTop3Header);
         commentListView.addFooterView(commentTop3Footer);
+        commentListView.setAdapter(adapter);
+
 
         //点击调转至评论区事件
         if(commentList.size() == 0){
